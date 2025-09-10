@@ -1,0 +1,272 @@
+[
+  {
+    "jd": {
+      "jd_id": "d5ad069e-5553-453b-8676-8d1b248e48dc",
+      "title": "Software Engineer",
+      "description": "Next pressure under organization worker. Consider population him some interview evening argue hand. True occur week purpose president design future. Music brother city herself leave blood book matter. Leg wind listen prevent alone change.",
+      "required_skills": [
+        "Python",
+        "Django",
+        "REST",
+        "Git",
+        "Docker",
+        "AWS"
+      ],
+      "min_experience_years": 3,
+      "education": "Bachelor's in relevant field"
+    },
+    "resumes": [
+      {
+        "resume_id": "035ad4bf-94be-4017-938b-147640af2a83",
+        "name": "Tanya Hicks",
+        "email": "mandy06@gmail.com",
+        "phone": "(963)104-1732x89974",
+        "summary": "Win catch amount consumer until another field. Matter first live work dark soon wish short. According management school officer test team direction.",
+        "skills": [
+          "Python",
+          "Django",
+          "REST",
+          "Git",
+          "Docker",
+          "AWS",
+          "REST",
+          "Docker"
+        ],
+        "experience_years": 3,
+        "education": "Bachelor's in Engineer, chemical",
+        "match_label": "Excellent",
+        "ats_score": 94.42
+      },
+      {
+        "resume_id": "5f0b084e-5f88-44f3-a2c2-f9cfa9463117",
+        "name": "Nicole Miller",
+        "email": "mcollins@moore.com",
+        "phone": "751.963.5804x237",
+        "summary": "Tough table owner four billion while. Modern weight do deal lead debate first. Reflect arrive writer southern professor. Book us along.",
+        "skills": [
+          "Git",
+          "Django",
+          "Docker",
+          "REST",
+          "Python"
+        ],
+        "experience_years": 6,
+        "education": "Bachelor's in Equities trader",
+        "match_label": "Good",
+        "ats_score": 74.47
+      },
+      {
+        "resume_id": "6ae22bcc-7758-44d8-a0b2-16111eab50a0",
+        "name": "Victor Walton",
+        "email": "pollardsandra@chase-davis.biz",
+        "phone": "(414)180-0519x00604",
+        "summary": "Key seven out. Human morning contain worker.",
+        "skills": [
+          "Django",
+          "Git",
+          "REST"
+        ],
+        "experience_years": 3,
+        "education": "Bachelor's in Clothing/textile technologist",
+        "match_label": "Partial",
+        "ats_score": 52.76
+      },
+      {
+        "resume_id": "679540d7-caa8-4e2e-8f36-179f9f4af761",
+        "name": "Cesar Oneal",
+        "email": "ipierce@carter.info",
+        "phone": "(281)590-3210",
+        "summary": "Authority car base particular something federal ready. Source evening majority stay increase record half. Give then despite right really among blue. Rate food speak head hope.",
+        "skills": [
+          "C++",
+          "Java",
+          "Teamwork"
+        ],
+        "experience_years": 5,
+        "education": "Bachelor's in Therapist, art",
+        "match_label": "Poor",
+        "ats_score": 31.42
+      }
+    ]
+  },
+  {
+    "jd": {
+      "jd_id": "c969545f-7920-420b-a39a-14dbbb4b00ad",
+      "title": "Data Scientist",
+      "description": "Doctor society model special north statement ok true. Action company only. Bank finally activity protect study point who hot.",
+      "required_skills": [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "SQL",
+        "TensorFlow",
+        "Matplotlib"
+      ],
+      "min_experience_years": 2,
+      "education": "Bachelor's in relevant field"
+    },
+    "resumes": [
+      {
+        "resume_id": "2c6cdc15-17fd-4224-a5e7-bc914d2f88c0",
+        "name": "Laura Robinson",
+        "email": "matthewsmith@anderson.org",
+        "phone": "372-068-5570x2088",
+        "summary": "Account lawyer senior draw design recently. Why maintain either. Reality city democratic myself attorney.",
+        "skills": [
+          "Python",
+          "Pandas",
+          "Scikit-learn",
+          "SQL",
+          "TensorFlow",
+          "Matplotlib",
+          "Python",
+          "TensorFlow"
+        ],
+        "experience_years": 3,
+        "education": "Bachelor's in Trade mark attorney",
+        "match_label": "Excellent",
+        "ats_score": 96.46
+      },
+      {
+        "resume_id": "525c1fe3-b469-4f51-b20e-ba716ca91fa2",
+        "name": "Sheila Thomas",
+        "email": "rhonda23@harrison.net",
+        "phone": "+1-461-633-1957",
+        "summary": "Attorney seven necessary power. Last would night yourself. Mention machine water grow. Light wind table win lot.",
+        "skills": [
+          "Pandas",
+          "SQL",
+          "Python",
+          "Scikit-learn",
+          "TensorFlow"
+        ],
+        "experience_years": 2,
+        "education": "Bachelor's in Editor, magazine features",
+        "match_label": "Good",
+        "ats_score": 88.49
+      },
+      {
+        "resume_id": "06b5c2fc-4524-45d8-a172-e0b58299d576",
+        "name": "Renee Pennington",
+        "email": "vincentashley@hotmail.com",
+        "phone": "429.724.9939x520",
+        "summary": "Pull husband kid company owner argue. Work young color. Language military research conference.",
+        "skills": [
+          "Pandas",
+          "Matplotlib",
+          "SQL"
+        ],
+        "experience_years": 7,
+        "education": "Bachelor's in Television/film/video producer",
+        "match_label": "Partial",
+        "ats_score": 52.19
+      },
+      {
+        "resume_id": "311c02c9-ac89-4e5c-a002-da4513ad356e",
+        "name": "Karina Burton",
+        "email": "danielsanford@campbell-smith.biz",
+        "phone": "100.327.2732",
+        "summary": "Class protect side series soon rule notice meet. While difficult television. Himself officer short than grow establish interest.",
+        "skills": [
+          "Excel",
+          "C++",
+          "Teamwork"
+        ],
+        "experience_years": 3,
+        "education": "Bachelor's in Psychotherapist, child",
+        "match_label": "Poor",
+        "ats_score": 26.35
+      }
+    ]
+  },
+  {
+    "jd": {
+      "jd_id": "baace067-951a-4bc7-aa85-7d93b2f3f8a8",
+      "title": "Sales Manager",
+      "description": "Kitchen collection meet black upon. Budget accept member right indeed. Pass everyone become television produce.",
+      "required_skills": [
+        "CRM",
+        "Salesforce",
+        "Negotiation",
+        "Lead Generation",
+        "Communication",
+        "Excel"
+      ],
+      "min_experience_years": 5,
+      "education": "Bachelor's in relevant field"
+    },
+    "resumes": [
+      {
+        "resume_id": "518d6d43-5a7c-43c5-8b93-ff09e559a6b4",
+        "name": "Shane Taylor",
+        "email": "qnguyen@gmail.com",
+        "phone": "001-674-391-2125x1740",
+        "summary": "Offer ask better agency. Market office save per. Across ready might general serious any.",
+        "skills": [
+          "CRM",
+          "Salesforce",
+          "Negotiation",
+          "Lead Generation",
+          "Communication",
+          "Excel",
+          "Salesforce",
+          "Lead Generation"
+        ],
+        "experience_years": 1,
+        "education": "Bachelor's in Engineer, site",
+        "match_label": "Excellent",
+        "ats_score": 98.15
+      },
+      {
+        "resume_id": "b8ed1c54-3bf9-4000-b619-41fa88e04397",
+        "name": "Michael Simon",
+        "email": "jonathannorton@gmail.com",
+        "phone": "(846)903-9022",
+        "summary": "Accept kitchen their meeting.",
+        "skills": [
+          "Excel",
+          "Lead Generation",
+          "CRM",
+          "Communication",
+          "Negotiation"
+        ],
+        "experience_years": 6,
+        "education": "Bachelor's in Market researcher",
+        "match_label": "Good",
+        "ats_score": 86.65
+      },
+      {
+        "resume_id": "b267e57b-57a3-4a84-affb-a49fd07fb530",
+        "name": "Karina Diaz",
+        "email": "michellethompson@schmidt.biz",
+        "phone": "(051)871-2296",
+        "summary": "Produce bar standard exactly indeed year decide teach. Section understand center word course material nearly.",
+        "skills": [
+          "Communication",
+          "CRM",
+          "Salesforce"
+        ],
+        "experience_years": 7,
+        "education": "Bachelor's in Records manager",
+        "match_label": "Partial",
+        "ats_score": 50.75
+      },
+      {
+        "resume_id": "248c77eb-3e97-4b4d-8e67-0de9df4b18fd",
+        "name": "Erin Barajas",
+        "email": "scott27@johnson-russell.com",
+        "phone": "(717)094-1505",
+        "summary": "Then make eye American discuss church. Either offer talk head political newspaper. Someone couple little ever.",
+        "skills": [
+          "C++",
+          "Excel",
+          "Teamwork"
+        ],
+        "experience_years": 3,
+        "education": "Bachelor's in Curator",
+        "match_label": "Poor",
+        "ats_score": 46.09
+      }
+    ]
+  }
+]

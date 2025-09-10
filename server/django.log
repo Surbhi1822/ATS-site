@@ -1,0 +1,930 @@
+INFO 2025-09-03 17:37:43,942 autoreload 13420 12984 Watching for file changes with StatReloader
+INFO 2025-09-03 17:38:25,834 views 13420 20984 Login attempt for email: hello@gmail.com
+INFO 2025-09-03 17:38:27,681 views 13420 20984 Password change required for user: hello@gmail.com
+WARNING 2025-09-03 17:38:27,685 log 13420 20984 Forbidden: /login/
+WARNING 2025-09-03 17:38:27,688 basehttp 13420 20984 "POST /login/ HTTP/1.1" 403 86
+INFO 2025-09-03 17:38:45,800 basehttp 13420 26832 "GET /admin/api/user/2/change/ HTTP/1.1" 200 21029
+INFO 2025-09-03 17:38:45,887 basehttp 13420 26832 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-03 17:38:50,645 views 13420 20984 Login attempt for email: hello@gmail.com
+INFO 2025-09-03 17:38:52,394 views 13420 20984 Password change required for user: hello@gmail.com
+WARNING 2025-09-03 17:38:52,397 log 13420 20984 Forbidden: /login/
+WARNING 2025-09-03 17:38:52,399 basehttp 13420 20984 "POST /login/ HTTP/1.1" 403 86
+INFO 2025-09-03 17:58:58,486 autoreload 13420 12984 C:\Users\SurbhiChayya\Downloads\vitejs-vite-jjynnubo\server\server\settings.py changed, reloading.
+INFO 2025-09-03 17:58:59,457 autoreload 28648 30528 Watching for file changes with StatReloader
+INFO 2025-09-03 18:00:32,145 autoreload 28648 30528 C:\Users\SurbhiChayya\Downloads\vitejs-vite-jjynnubo\server\api\views.py changed, reloading.
+INFO 2025-09-03 18:00:32,868 autoreload 920 10840 Watching for file changes with StatReloader
+INFO 2025-09-03 18:01:00,988 views 920 20964 Login attempt for email: hello@gmail.com
+WARNING 2025-09-03 18:01:02,748 views 920 20964 Failed login attempt for email: hello@gmail.com
+ERROR 2025-09-03 18:01:02,762 exception_handlers 920 20964 API Exception: AuthenticationFailed - Invalid email or password in CustomLoginView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\vitejs-vite-jjynnubo\server\api\views.py", line 33, in post
+    raise AuthenticationFailed("Invalid email or password")
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+WARNING 2025-09-03 18:01:02,776 log 920 20964 Unauthorized: /login/
+WARNING 2025-09-03 18:01:02,779 basehttp 920 20964 "POST /login/ HTTP/1.1" 401 65
+INFO 2025-09-03 18:01:25,165 views 920 20964 Login attempt for email: hello@gmail.com
+INFO 2025-09-03 18:01:26,977 views 920 20964 Password change required for user: hello@gmail.com
+INFO 2025-09-03 18:01:27,294 basehttp 920 20964 "POST /login/ HTTP/1.1" 200 511
+INFO 2025-09-03 18:01:27,835 basehttp 920 20964 "OPTIONS /profile/ HTTP/1.1" 200 0
+INFO 2025-09-03 18:01:27,860 basehttp 920 20964 "GET /profile/ HTTP/1.1" 200 82
+INFO 2025-09-03 18:01:27,893 basehttp 920 20964 "GET /profile/ HTTP/1.1" 200 82
+INFO 2025-09-03 18:01:27,931 basehttp 920 20964 "GET /profile/ HTTP/1.1" 200 82
+INFO 2025-09-03 18:01:27,962 basehttp 920 20964 "GET /profile/ HTTP/1.1" 200 82
+INFO 2025-09-03 18:02:01,015 basehttp 920 20964 "OPTIONS /change-password/ HTTP/1.1" 200 0
+INFO 2025-09-03 18:02:01,027 views 920 20964 Password change attempt for user: hello@gmail.com
+WARNING 2025-09-03 18:02:01,063 views 920 20964 Password change validation failed for user: hello@gmail.com
+ERROR 2025-09-03 18:02:01,065 exception_handlers 920 20964 API Exception: ValidationError - {'new_password': [ErrorDetail(string='This password is too common.', code='password_too_common')]} in ChangePasswordView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\vitejs-vite-jjynnubo\server\api\views.py", line 72, in post
+    raise ValidationError(serializer.errors)
+rest_framework.exceptions.ValidationError: {'new_password': [ErrorDetail(string='This password is too common.', code='password_too_common')]}
+WARNING 2025-09-03 18:02:01,072 log 920 20964 Bad Request: /change-password/
+WARNING 2025-09-03 18:02:01,076 basehttp 920 20964 "POST /change-password/ HTTP/1.1" 400 104
+INFO 2025-09-03 18:02:17,039 views 920 20964 Password change attempt for user: hello@gmail.com
+INFO 2025-09-03 18:02:20,594 views 920 20964 Password successfully changed for user: hello@gmail.com
+INFO 2025-09-03 18:02:20,597 basehttp 920 20964 "POST /change-password/ HTTP/1.1" 200 42
+INFO 2025-09-03 18:02:34,538 views 920 20964 Login attempt for email: hello@gmail.com
+INFO 2025-09-03 18:02:36,426 views 920 20964 Successful login for user: hello@gmail.com
+INFO 2025-09-03 18:02:36,430 basehttp 920 20964 "POST /login/ HTTP/1.1" 200 483
+INFO 2025-09-03 18:02:36,951 basehttp 920 20964 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-03 18:02:36,976 basehttp 920 20964 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-03 18:02:36,997 basehttp 920 20964 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-03 18:02:37,040 basehttp 920 20964 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 14:16:44,234 autoreload 15076 29452 Watching for file changes with StatReloader
+WARNING 2025-09-04 14:16:47,940 log 15076 14568 Not Found: /
+WARNING 2025-09-04 14:16:47,943 basehttp 15076 14568 "GET / HTTP/1.1" 404 3208
+INFO 2025-09-04 14:16:56,970 basehttp 15076 27732 "OPTIONS /profile/ HTTP/1.1" 200 0
+ERROR 2025-09-04 14:16:57,009 exception_handlers 15076 27732 API Exception: InvalidToken - {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]} in CurrentUserView.GET
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+    ...<4 lines>...
+    )
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+WARNING 2025-09-04 14:16:57,016 log 15076 27732 Unauthorized: /profile/
+WARNING 2025-09-04 14:16:57,016 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 401 227
+ERROR 2025-09-04 14:16:57,018 exception_handlers 15076 27732 API Exception: InvalidToken - {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]} in CurrentUserView.GET
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+    ...<4 lines>...
+    )
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+WARNING 2025-09-04 14:16:57,020 log 15076 27732 Unauthorized: /profile/
+WARNING 2025-09-04 14:16:57,021 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 401 227
+ERROR 2025-09-04 14:16:57,024 exception_handlers 15076 27732 API Exception: InvalidToken - {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]} in CurrentUserView.GET
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+    ...<4 lines>...
+    )
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+WARNING 2025-09-04 14:16:57,026 log 15076 27732 Unauthorized: /profile/
+WARNING 2025-09-04 14:16:57,028 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 401 227
+ERROR 2025-09-04 14:16:57,033 exception_handlers 15076 27732 API Exception: InvalidToken - {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]} in CurrentUserView.GET
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+    ...<4 lines>...
+    )
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+WARNING 2025-09-04 14:16:57,036 log 15076 27732 Unauthorized: /profile/
+INFO 2025-09-04 14:16:57,037 basehttp 15076 2196 "OPTIONS /refresh/ HTTP/1.1" 200 0
+WARNING 2025-09-04 14:16:57,037 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 401 227
+INFO 2025-09-04 14:16:57,059 basehttp 15076 27732 "POST /refresh/ HTTP/1.1" 200 241
+INFO 2025-09-04 14:16:57,065 basehttp 15076 2196 "POST /refresh/ HTTP/1.1" 200 241
+INFO 2025-09-04 14:16:57,067 basehttp 15076 14276 "POST /refresh/ HTTP/1.1" 200 241
+INFO 2025-09-04 14:16:57,074 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 14:16:57,074 basehttp 15076 20580 "POST /refresh/ HTTP/1.1" 200 241
+INFO 2025-09-04 14:16:57,081 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 14:16:57,085 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 14:16:57,089 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 14:16:57,094 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 14:17:15,038 basehttp 15076 27732 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2025-09-04 14:17:15,043 views 15076 27732 Login attempt for email: surbhi.chhaya@ext.lightstorm.in
+INFO 2025-09-04 14:17:15,958 views 15076 27732 Password change required for user: surbhi.chhaya@ext.lightstorm.in
+INFO 2025-09-04 14:17:15,960 basehttp 15076 27732 "POST /login/ HTTP/1.1" 200 511
+INFO 2025-09-04 14:17:16,137 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 200 98
+INFO 2025-09-04 14:17:16,145 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 200 98
+INFO 2025-09-04 14:17:16,152 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 200 98
+INFO 2025-09-04 14:17:16,159 basehttp 15076 27732 "GET /profile/ HTTP/1.1" 200 98
+INFO 2025-09-04 14:18:09,724 basehttp 15076 27732 "OPTIONS /change-password/ HTTP/1.1" 200 0
+INFO 2025-09-04 14:18:09,732 views 15076 27732 Password change attempt for user: surbhi.chhaya@ext.lightstorm.in
+INFO 2025-09-04 14:18:11,560 views 15076 27732 Password successfully changed for user: surbhi.chhaya@ext.lightstorm.in
+INFO 2025-09-04 14:18:11,561 basehttp 15076 27732 "POST /change-password/ HTTP/1.1" 200 42
+INFO 2025-09-04 14:18:38,513 basehttp 15076 14568 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-04 14:18:38,617 basehttp 15076 14568 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+INFO 2025-09-04 14:18:54,594 basehttp 15076 14568 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-09-04 14:18:54,646 basehttp 15076 14568 "GET /admin/ HTTP/1.1" 200 7997
+INFO 2025-09-04 14:18:56,794 basehttp 15076 14568 "GET /admin/api/user/ HTTP/1.1" 200 9428
+INFO 2025-09-04 14:18:56,852 basehttp 15076 14568 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-04 14:19:00,044 basehttp 15076 14568 "GET /admin/api/user/1/change/ HTTP/1.1" 200 21101
+INFO 2025-09-04 14:19:00,083 basehttp 15076 14568 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-04 14:19:05,118 basehttp 15076 14568 "GET /admin/api/user/ HTTP/1.1" 200 9428
+INFO 2025-09-04 14:28:58,903 autoreload 15076 29452 C:\Users\SurbhiChayya\Downloads\vitejs-vite-jjynnubo\server\server\settings.py changed, reloading.
+INFO 2025-09-04 14:28:59,593 autoreload 2792 20444 Watching for file changes with StatReloader
+INFO 2025-09-04 14:37:46,568 autoreload 2792 20444 C:\Users\SurbhiChayya\Downloads\vitejs-vite-jjynnubo\server\server\settings.py changed, reloading.
+INFO 2025-09-04 14:37:47,210 autoreload 29732 25640 Watching for file changes with StatReloader
+INFO 2025-09-04 15:13:24,975 views 29732 15196 Login attempt for email: hello@gmail.com
+WARNING 2025-09-04 15:13:25,804 views 29732 15196 Failed login attempt for email: hello@gmail.com
+ERROR 2025-09-04 15:13:25,806 exception_handlers 29732 15196 API Exception: AuthenticationFailed - Invalid email or password in CustomLoginView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\vitejs-vite-jjynnubo\server\api\views.py", line 33, in post
+    raise AuthenticationFailed("Invalid email or password")
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+WARNING 2025-09-04 15:13:25,810 log 29732 15196 Unauthorized: /login/
+WARNING 2025-09-04 15:13:25,812 basehttp 29732 15196 "POST /login/ HTTP/1.1" 401 65
+INFO 2025-09-04 15:13:47,879 views 29732 15196 Login attempt for email: surbhi.chhaya@ext.lightstorm.in
+WARNING 2025-09-04 15:13:48,739 views 29732 15196 Failed login attempt for email: surbhi.chhaya@ext.lightstorm.in
+ERROR 2025-09-04 15:13:48,740 exception_handlers 29732 15196 API Exception: AuthenticationFailed - Invalid email or password in CustomLoginView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\vitejs-vite-jjynnubo\server\api\views.py", line 33, in post
+    raise AuthenticationFailed("Invalid email or password")
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+WARNING 2025-09-04 15:13:48,742 log 29732 15196 Unauthorized: /login/
+WARNING 2025-09-04 15:13:48,743 basehttp 29732 15196 "POST /login/ HTTP/1.1" 401 65
+INFO 2025-09-04 15:13:55,189 basehttp 29732 18072 "GET /admin/api/user/1/change/ HTTP/1.1" 200 21101
+INFO 2025-09-04 15:13:55,231 basehttp 29732 18072 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-04 15:17:16,169 autoreload 6788 20272 Watching for file changes with StatReloader
+INFO 2025-09-04 15:17:22,302 basehttp 6788 18772 "GET /admin/api/user/ HTTP/1.1" 200 9428
+INFO 2025-09-04 15:17:22,341 basehttp 6788 18772 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-04 15:17:24,196 basehttp 6788 18772 "GET /admin/api/user/2/change/ HTTP/1.1" 200 21021
+INFO 2025-09-04 15:17:24,239 basehttp 6788 18772 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-04 15:17:25,786 basehttp 6788 18772 "GET /admin/api/user/2/history/ HTTP/1.1" 200 7708
+INFO 2025-09-04 15:17:34,010 basehttp 6788 18772 "GET /admin/api/user/2/change/ HTTP/1.1" 200 21021
+INFO 2025-09-04 15:17:34,052 basehttp 6788 18772 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-04 15:17:56,675 views 6788 31712 Login attempt for email: hello@gmail.com
+INFO 2025-09-04 15:17:57,547 views 6788 31712 Successful login for user: hello@gmail.com
+INFO 2025-09-04 15:17:57,569 basehttp 6788 31712 "POST /login/ HTTP/1.1" 200 483
+INFO 2025-09-04 15:17:57,739 basehttp 6788 31712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:17:57,744 basehttp 6788 31712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:17:57,752 basehttp 6788 31712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:17:57,760 basehttp 6788 31712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:20:08,378 autoreload 13612 3392 Watching for file changes with StatReloader
+INFO 2025-09-04 15:20:13,553 basehttp 13612 25620 "GET /admin/api/user/ HTTP/1.1" 302 0
+INFO 2025-09-04 15:20:13,580 basehttp 13612 25620 "GET /admin/login/?next=/admin/api/user/ HTTP/1.1" 200 4188
+INFO 2025-09-04 15:20:30,660 basehttp 13612 25620 "POST /admin/login/?next=/admin/api/user/ HTTP/1.1" 302 0
+INFO 2025-09-04 15:20:30,724 basehttp 13612 25620 "GET /admin/api/user/ HTTP/1.1" 200 9428
+INFO 2025-09-04 15:20:30,767 basehttp 13612 25620 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-04 15:20:38,041 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:20:38,052 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:20:38,066 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:20:38,079 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:21:44,566 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:21:44,573 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:21:44,580 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:21:44,586 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:22:50,565 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:22:50,570 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:22:50,576 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-04 15:22:50,582 basehttp 13612 2896 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 13:16:52,147 autoreload 14896 8420 Watching for file changes with StatReloader
+INFO 2025-09-05 13:50:44,753 basehttp 14896 29380 "OPTIONS /profile/ HTTP/1.1" 200 0
+ERROR 2025-09-05 13:50:44,872 exception_handlers 14896 29380 API Exception: InvalidToken - {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]} in CurrentUserView.GET
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+    ...<4 lines>...
+    )
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+WARNING 2025-09-05 13:50:44,885 log 14896 29380 Unauthorized: /profile/
+WARNING 2025-09-05 13:50:44,886 basehttp 14896 29380 "GET /profile/ HTTP/1.1" 401 227
+ERROR 2025-09-05 13:50:44,892 exception_handlers 14896 29380 API Exception: InvalidToken - {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]} in CurrentUserView.GET
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+    ...<4 lines>...
+    )
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+WARNING 2025-09-05 13:50:44,899 log 14896 29380 Unauthorized: /profile/
+WARNING 2025-09-05 13:50:44,900 basehttp 14896 29380 "GET /profile/ HTTP/1.1" 401 227
+ERROR 2025-09-05 13:50:44,904 exception_handlers 14896 29380 API Exception: InvalidToken - {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]} in CurrentUserView.GET
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+    ...<4 lines>...
+    )
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+INFO 2025-09-05 13:50:44,906 basehttp 14896 17352 "OPTIONS /refresh/ HTTP/1.1" 200 0
+WARNING 2025-09-05 13:50:44,910 log 14896 29380 Unauthorized: /profile/
+WARNING 2025-09-05 13:50:44,914 basehttp 14896 29380 "GET /profile/ HTTP/1.1" 401 227
+INFO 2025-09-05 13:50:44,915 basehttp 14896 17352 "OPTIONS /refresh/ HTTP/1.1" 200 0
+ERROR 2025-09-05 13:50:44,925 exception_handlers 14896 29380 API Exception: InvalidToken - {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]} in CurrentUserView.GET
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+    ...<4 lines>...
+    )
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+WARNING 2025-09-05 13:50:44,936 log 14896 29380 Unauthorized: /profile/
+WARNING 2025-09-05 13:50:44,941 basehttp 14896 29380 "GET /profile/ HTTP/1.1" 401 227
+INFO 2025-09-05 13:50:44,951 basehttp 14896 17352 "POST /refresh/ HTTP/1.1" 200 241
+INFO 2025-09-05 13:50:44,953 basehttp 14896 26564 "POST /refresh/ HTTP/1.1" 200 241
+INFO 2025-09-05 13:50:44,954 basehttp 14896 11948 "POST /refresh/ HTTP/1.1" 200 241
+INFO 2025-09-05 13:50:44,957 basehttp 14896 29380 "POST /refresh/ HTTP/1.1" 200 241
+INFO 2025-09-05 13:50:44,970 basehttp 14896 29380 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 13:50:44,982 basehttp 14896 29380 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 13:50:44,990 basehttp 14896 29380 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 13:50:45,004 basehttp 14896 29380 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 13:50:45,025 basehttp 14896 29380 "GET /profile/ HTTP/1.1" 200 83
+WARNING 2025-09-05 13:51:18,812 log 14896 30476 Not Found: /
+WARNING 2025-09-05 13:51:18,814 basehttp 14896 30476 "GET / HTTP/1.1" 404 3754
+INFO 2025-09-05 13:51:34,706 basehttp 14896 30476 "GET /admin/ HTTP/1.1" 200 7997
+INFO 2025-09-05 13:51:34,766 basehttp 14896 30476 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-09-05 13:51:34,790 basehttp 14896 30476 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-09-05 13:51:38,826 basehttp 14896 30476 "GET /admin/api/user/ HTTP/1.1" 200 9428
+INFO 2025-09-05 13:51:38,908 basehttp 14896 30476 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-05 13:52:33,874 basehttp 14896 29380 "OPTIONS /process-resumes/ HTTP/1.1" 200 0
+INFO 2025-09-05 13:52:33,889 ats_views 14896 29380 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 13:52:37,534 SentenceTransformer 14896 29380 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-05 13:53:00,634 SentenceTransformer 14896 29380 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-05 13:53:05,950 SentenceTransformer 14896 29380 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-05 13:53:11,890 SentenceTransformer 14896 29380 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-05 13:53:19,302 SentenceTransformer 14896 29380 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-05 13:53:25,594 SentenceTransformer 14896 29380 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-05 13:53:30,261 basehttp 14896 11948 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 13:53:30,281 basehttp 14896 11948 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 13:53:30,300 basehttp 14896 11948 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 13:53:30,331 basehttp 14896 11948 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 13:53:36,571 SentenceTransformer 14896 29380 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-05 14:36:20,797 nltk_utils 11660 15080 NLTK data 'punkt' already available
+INFO 2025-09-05 14:36:20,798 nltk_utils 11660 15080 NLTK data 'stopwords' already available
+INFO 2025-09-05 14:36:20,801 nltk_utils 11660 15080 Downloading NLTK data: wordnet
+INFO 2025-09-05 14:36:23,062 nltk_utils 11660 15080 Successfully downloaded NLTK data: wordnet
+INFO 2025-09-05 14:36:35,393 nltk_utils 9312 18584 NLTK data 'punkt' already available
+INFO 2025-09-05 14:36:35,394 nltk_utils 9312 18584 NLTK data 'stopwords' already available
+INFO 2025-09-05 14:36:35,396 nltk_utils 9312 18584 Downloading NLTK data: wordnet
+INFO 2025-09-05 14:36:38,562 nltk_utils 9312 18584 Successfully downloaded NLTK data: wordnet
+INFO 2025-09-05 14:36:45,805 autoreload 11348 20396 Watching for file changes with StatReloader
+INFO 2025-09-05 14:36:51,166 nltk_utils 11348 20396 NLTK data 'punkt' already available
+INFO 2025-09-05 14:36:51,167 nltk_utils 11348 20396 NLTK data 'stopwords' already available
+INFO 2025-09-05 14:36:51,169 nltk_utils 11348 20396 Downloading NLTK data: wordnet
+INFO 2025-09-05 14:36:51,310 nltk_utils 11348 20396 Successfully downloaded NLTK data: wordnet
+INFO 2025-09-05 14:43:02,653 basehttp 11348 6712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 14:43:02,658 basehttp 11348 6712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 14:43:02,663 basehttp 11348 6712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 14:43:02,669 basehttp 11348 6712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 14:43:12,251 basehttp 11348 6712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 14:43:12,259 basehttp 11348 6712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 14:43:12,267 basehttp 11348 6712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 14:43:12,272 basehttp 11348 6712 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 14:43:38,733 ats_views 11348 6712 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 14:43:39,189 ats_views 11348 6712 Initializing ATS instance...
+INFO 2025-09-05 14:43:40,103 SentenceTransformer 11348 6712 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-05 14:43:48,706 ats_views 11348 6712 ATS instance initialized successfully
+INFO 2025-09-05 14:43:53,563 ats_views 11348 6712 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 27
+INFO 2025-09-05 14:43:54,087 ats_views 11348 6712 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 45
+INFO 2025-09-05 14:43:54,831 ats_views 11348 6712 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 38
+INFO 2025-09-05 14:43:55,445 ats_views 11348 6712 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 36
+INFO 2025-09-05 14:43:56,214 ats_views 11348 6712 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 28
+INFO 2025-09-05 14:43:56,997 ats_views 11348 6712 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 43
+INFO 2025-09-05 14:43:57,573 ats_views 11348 6712 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 53
+INFO 2025-09-05 14:43:58,230 ats_views 11348 6712 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 54
+INFO 2025-09-05 14:43:58,814 ats_views 11348 6712 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 39
+INFO 2025-09-05 14:43:59,478 ats_views 11348 6712 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 62
+INFO 2025-09-05 14:43:59,894 ats_views 11348 6712 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 18
+INFO 2025-09-05 14:44:00,328 ats_views 11348 6712 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 40
+INFO 2025-09-05 14:44:00,865 ats_views 11348 6712 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 50
+INFO 2025-09-05 14:44:01,546 ats_views 11348 6712 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 35
+INFO 2025-09-05 14:44:01,546 ats_views 11348 6712 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-05 14:44:01,547 basehttp 11348 6712 "POST /process-resumes/ HTTP/1.1" 200 8888
+INFO 2025-09-05 14:48:13,532 ats_views 11348 6712 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 14:48:14,786 ats_views 11348 6712 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 27
+INFO 2025-09-05 14:48:15,748 ats_views 11348 6712 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 45
+INFO 2025-09-05 14:48:17,383 ats_views 11348 6712 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 38
+INFO 2025-09-05 14:48:18,908 ats_views 11348 6712 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 36
+INFO 2025-09-05 14:48:20,342 ats_views 11348 6712 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 28
+INFO 2025-09-05 14:48:21,830 ats_views 11348 6712 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 43
+INFO 2025-09-05 14:48:23,060 ats_views 11348 6712 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 53
+INFO 2025-09-05 14:48:24,576 ats_views 11348 6712 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 54
+INFO 2025-09-05 14:48:25,892 ats_views 11348 6712 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 39
+INFO 2025-09-05 14:48:27,474 ats_views 11348 6712 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 62
+INFO 2025-09-05 14:48:28,449 ats_views 11348 6712 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 18
+INFO 2025-09-05 14:48:29,393 ats_views 11348 6712 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 40
+INFO 2025-09-05 14:48:30,461 ats_views 11348 6712 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 50
+INFO 2025-09-05 14:48:31,918 ats_views 11348 6712 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 35
+INFO 2025-09-05 14:48:31,918 ats_views 11348 6712 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-05 14:48:31,919 basehttp 11348 6712 "POST /process-resumes/ HTTP/1.1" 200 8888
+INFO 2025-09-05 15:20:07,903 basehttp 11348 28436 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 15:20:07,914 basehttp 11348 28436 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 15:20:07,924 basehttp 11348 28436 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 15:20:07,934 basehttp 11348 28436 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 15:20:40,923 ats_views 11348 28436 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 15:20:42,071 ats_views 11348 28436 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 26
+INFO 2025-09-05 15:20:43,110 ats_views 11348 28436 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 44
+INFO 2025-09-05 15:20:44,637 ats_views 11348 28436 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 37
+INFO 2025-09-05 15:20:46,083 ats_views 11348 28436 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 35
+INFO 2025-09-05 15:20:47,528 ats_views 11348 28436 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 27
+INFO 2025-09-05 15:20:48,893 ats_views 11348 28436 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 42
+INFO 2025-09-05 15:20:49,957 ats_views 11348 28436 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 51
+INFO 2025-09-05 15:20:51,470 ats_views 11348 28436 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 52
+INFO 2025-09-05 15:20:52,990 ats_views 11348 28436 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 39
+INFO 2025-09-05 15:20:53,787 ats_views 11348 28436 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 59
+INFO 2025-09-05 15:20:54,201 ats_views 11348 28436 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 17
+INFO 2025-09-05 15:20:54,621 ats_views 11348 28436 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 39
+INFO 2025-09-05 15:20:55,111 ats_views 11348 28436 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 49
+INFO 2025-09-05 15:20:55,742 ats_views 11348 28436 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 35
+INFO 2025-09-05 15:20:55,742 ats_views 11348 28436 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-05 15:20:55,743 basehttp 11348 28436 "POST /process-resumes/ HTTP/1.1" 200 8882
+INFO 2025-09-05 15:23:40,337 ats_views 11348 28436 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 15:23:41,526 ats_views 11348 28436 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 26
+INFO 2025-09-05 15:23:42,505 ats_views 11348 28436 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 44
+INFO 2025-09-05 15:23:44,132 ats_views 11348 28436 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 37
+INFO 2025-09-05 15:23:45,700 ats_views 11348 28436 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 35
+INFO 2025-09-05 15:23:47,184 ats_views 11348 28436 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 27
+INFO 2025-09-05 15:23:48,638 ats_views 11348 28436 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 42
+INFO 2025-09-05 15:23:49,800 ats_views 11348 28436 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 51
+INFO 2025-09-05 15:23:51,317 ats_views 11348 28436 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 52
+INFO 2025-09-05 15:23:52,696 ats_views 11348 28436 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 39
+INFO 2025-09-05 15:23:54,227 ats_views 11348 28436 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 59
+INFO 2025-09-05 15:23:55,112 ats_views 11348 28436 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 17
+INFO 2025-09-05 15:23:56,054 ats_views 11348 28436 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 39
+INFO 2025-09-05 15:23:57,157 ats_views 11348 28436 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 49
+INFO 2025-09-05 15:23:58,653 ats_views 11348 28436 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 35
+INFO 2025-09-05 15:23:58,653 ats_views 11348 28436 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-05 15:23:58,655 basehttp 11348 28436 "POST /process-resumes/ HTTP/1.1" 200 8882
+INFO 2025-09-05 15:24:38,931 ats_views 11348 28436 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 15:24:39,494 ats_views 11348 28436 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 26
+INFO 2025-09-05 15:24:39,918 ats_views 11348 28436 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 44
+INFO 2025-09-05 15:24:40,593 ats_views 11348 28436 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 37
+INFO 2025-09-05 15:24:41,263 ats_views 11348 28436 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 35
+INFO 2025-09-05 15:24:41,934 ats_views 11348 28436 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 27
+INFO 2025-09-05 15:24:43,430 ats_views 11348 28436 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 42
+INFO 2025-09-05 15:24:44,558 ats_views 11348 28436 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 51
+INFO 2025-09-05 15:24:46,125 ats_views 11348 28436 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 52
+INFO 2025-09-05 15:24:47,535 ats_views 11348 28436 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 39
+INFO 2025-09-05 15:24:49,092 ats_views 11348 28436 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 59
+INFO 2025-09-05 15:24:50,134 ats_views 11348 28436 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 17
+INFO 2025-09-05 15:24:51,153 ats_views 11348 28436 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 39
+INFO 2025-09-05 15:24:52,263 ats_views 11348 28436 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 49
+INFO 2025-09-05 15:24:53,858 ats_views 11348 28436 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 35
+INFO 2025-09-05 15:24:53,858 ats_views 11348 28436 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-05 15:24:53,860 basehttp 11348 28436 "POST /process-resumes/ HTTP/1.1" 200 8882
+INFO 2025-09-05 15:25:13,145 basehttp 11348 28436 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2025-09-05 15:25:13,147 views 11348 28436 Login attempt for email: hello@gmail.com
+INFO 2025-09-05 15:25:14,128 views 11348 28436 Successful login for user: hello@gmail.com
+INFO 2025-09-05 15:25:14,130 basehttp 11348 28436 "POST /login/ HTTP/1.1" 200 483
+INFO 2025-09-05 15:25:14,276 basehttp 11348 28436 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 15:25:14,283 basehttp 11348 28436 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 15:25:14,293 basehttp 11348 28436 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 15:25:14,300 basehttp 11348 28436 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 15:26:00,644 ats_views 11348 28436 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 15:26:01,824 ats_views 11348 28436 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 25
+INFO 2025-09-05 15:26:02,825 ats_views 11348 28436 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 41
+INFO 2025-09-05 15:26:04,453 ats_views 11348 28436 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 35
+INFO 2025-09-05 15:26:05,987 ats_views 11348 28436 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 33
+INFO 2025-09-05 15:26:07,584 ats_views 11348 28436 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 25
+INFO 2025-09-05 15:26:09,107 ats_views 11348 28436 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 40
+INFO 2025-09-05 15:26:10,266 ats_views 11348 28436 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 48
+INFO 2025-09-05 15:26:11,748 ats_views 11348 28436 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 49
+INFO 2025-09-05 15:26:13,111 ats_views 11348 28436 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 37
+INFO 2025-09-05 15:26:14,747 ats_views 11348 28436 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 56
+INFO 2025-09-05 15:26:15,737 ats_views 11348 28436 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 17
+INFO 2025-09-05 15:26:16,760 ats_views 11348 28436 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 37
+INFO 2025-09-05 15:26:17,898 ats_views 11348 28436 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 47
+INFO 2025-09-05 15:26:19,451 ats_views 11348 28436 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 33
+INFO 2025-09-05 15:26:19,451 ats_views 11348 28436 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-05 15:26:19,452 basehttp 11348 28436 "POST /process-resumes/ HTTP/1.1" 200 8882
+INFO 2025-09-05 16:24:06,646 autoreload 10332 28104 Watching for file changes with StatReloader
+INFO 2025-09-05 16:24:12,566 nltk_utils 10332 28104 NLTK data 'punkt' already available
+INFO 2025-09-05 16:24:12,566 nltk_utils 10332 28104 NLTK data 'stopwords' already available
+INFO 2025-09-05 16:24:12,569 nltk_utils 10332 28104 Downloading NLTK data: wordnet
+INFO 2025-09-05 16:24:12,823 nltk_utils 10332 28104 Successfully downloaded NLTK data: wordnet
+INFO 2025-09-05 16:24:17,609 basehttp 10332 13068 "OPTIONS /profile/ HTTP/1.1" 200 0
+INFO 2025-09-05 16:24:17,615 basehttp 10332 6884 "OPTIONS /profile/ HTTP/1.1" 200 0
+INFO 2025-09-05 16:24:17,616 basehttp 10332 24732 "OPTIONS /profile/ HTTP/1.1" 200 0
+INFO 2025-09-05 16:24:17,618 basehttp 10332 2528 "OPTIONS /profile/ HTTP/1.1" 200 0
+INFO 2025-09-05 16:24:17,645 basehttp 10332 13068 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:24:17,657 basehttp 10332 13068 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:24:17,665 basehttp 10332 13068 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:24:17,670 basehttp 10332 13068 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:24:34,485 views 10332 13068 Login attempt for email: hello@gmail.com
+WARNING 2025-09-05 16:24:35,365 views 10332 13068 Failed login attempt for email: hello@gmail.com
+ERROR 2025-09-05 16:24:35,369 exception_handlers 10332 13068 API Exception: AuthenticationFailed - Invalid email or password in CustomLoginView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-vitejs-vite-a4u7rtgw\project\server\api\views.py", line 33, in post
+    raise AuthenticationFailed("Invalid email or password")
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+WARNING 2025-09-05 16:24:35,373 log 10332 13068 Unauthorized: /login/
+WARNING 2025-09-05 16:24:35,374 basehttp 10332 13068 "POST /login/ HTTP/1.1" 401 65
+INFO 2025-09-05 16:24:50,668 views 10332 13068 Login attempt for email: hello@gmail.com
+INFO 2025-09-05 16:24:51,592 views 10332 13068 Successful login for user: hello@gmail.com
+INFO 2025-09-05 16:24:51,594 basehttp 10332 13068 "POST /login/ HTTP/1.1" 200 483
+INFO 2025-09-05 16:24:51,772 basehttp 10332 13068 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:24:51,778 basehttp 10332 13068 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:24:51,789 basehttp 10332 13068 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:24:51,795 basehttp 10332 13068 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:25:20,722 basehttp 10332 13068 "OPTIONS /process-resumes/ HTTP/1.1" 200 0
+INFO 2025-09-05 16:25:20,729 ats_views 10332 13068 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 16:25:21,297 ats_views 10332 13068 Initializing ATS instance...
+INFO 2025-09-05 16:25:22,380 SentenceTransformer 10332 13068 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-05 16:25:31,506 ats_views 10332 13068 ATS instance initialized successfully
+INFO 2025-09-05 16:25:36,949 ats_views 10332 13068 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 17
+INFO 2025-09-05 16:25:37,853 ats_views 10332 13068 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 29
+INFO 2025-09-05 16:25:39,277 ats_views 10332 13068 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 26
+INFO 2025-09-05 16:25:40,692 ats_views 10332 13068 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 23
+INFO 2025-09-05 16:25:42,134 ats_views 10332 13068 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 19
+INFO 2025-09-05 16:25:43,702 ats_views 10332 13068 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 29
+INFO 2025-09-05 16:25:44,791 ats_views 10332 13068 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 34
+INFO 2025-09-05 16:25:46,187 ats_views 10332 13068 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 37
+INFO 2025-09-05 16:25:47,523 ats_views 10332 13068 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 23
+INFO 2025-09-05 16:25:48,960 ats_views 10332 13068 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 41
+INFO 2025-09-05 16:25:49,795 ats_views 10332 13068 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 17
+INFO 2025-09-05 16:25:50,648 ats_views 10332 13068 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 27
+INFO 2025-09-05 16:25:51,644 ats_views 10332 13068 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 35
+INFO 2025-09-05 16:25:53,139 ats_views 10332 13068 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 22
+INFO 2025-09-05 16:25:53,140 ats_views 10332 13068 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-05 16:25:53,141 basehttp 10332 13068 "POST /process-resumes/ HTTP/1.1" 200 8882
+INFO 2025-09-05 16:26:56,822 ats_views 10332 13068 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 16:26:58,044 ats_views 10332 13068 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 17
+INFO 2025-09-05 16:26:58,907 ats_views 10332 13068 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 29
+INFO 2025-09-05 16:27:00,465 ats_views 10332 13068 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 26
+INFO 2025-09-05 16:27:01,788 ats_views 10332 13068 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 23
+INFO 2025-09-05 16:27:03,088 ats_views 10332 13068 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 19
+INFO 2025-09-05 16:27:04,368 ats_views 10332 13068 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 29
+INFO 2025-09-05 16:27:05,387 ats_views 10332 13068 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 34
+INFO 2025-09-05 16:27:06,670 ats_views 10332 13068 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 37
+INFO 2025-09-05 16:27:07,657 basehttp 10332 2528 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:27:07,678 basehttp 10332 2528 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:27:07,696 basehttp 10332 2528 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:27:07,708 basehttp 10332 2528 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:27:08,044 ats_views 10332 13068 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 23
+INFO 2025-09-05 16:27:09,578 ats_views 10332 13068 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 41
+INFO 2025-09-05 16:27:10,457 ats_views 10332 13068 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 17
+INFO 2025-09-05 16:27:11,342 ats_views 10332 13068 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 27
+INFO 2025-09-05 16:27:12,372 ats_views 10332 13068 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 35
+INFO 2025-09-05 16:27:13,901 ats_views 10332 13068 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 22
+INFO 2025-09-05 16:27:13,902 ats_views 10332 13068 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-05 16:27:14,046 basehttp 10332 13068 - Broken pipe from ('127.0.0.1', 64048)
+INFO 2025-09-05 16:27:28,725 basehttp 10332 2528 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:27:28,730 basehttp 10332 2528 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:27:28,736 basehttp 10332 2528 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:27:28,747 basehttp 10332 2528 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-05 16:27:57,792 ats_views 10332 2528 Resume processing request from user: hello@gmail.com
+INFO 2025-09-05 16:27:58,909 ats_views 10332 2528 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 17
+INFO 2025-09-05 16:27:59,780 ats_views 10332 2528 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 29
+INFO 2025-09-05 16:28:01,230 ats_views 10332 2528 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 26
+INFO 2025-09-05 16:28:02,535 ats_views 10332 2528 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 23
+INFO 2025-09-05 16:28:03,912 ats_views 10332 2528 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 19
+INFO 2025-09-05 16:28:05,363 ats_views 10332 2528 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 29
+INFO 2025-09-05 16:28:06,488 ats_views 10332 2528 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 34
+INFO 2025-09-05 16:28:08,002 ats_views 10332 2528 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 37
+INFO 2025-09-05 16:28:09,276 ats_views 10332 2528 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 23
+INFO 2025-09-05 16:28:10,916 ats_views 10332 2528 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 41
+INFO 2025-09-05 16:28:11,866 ats_views 10332 2528 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 17
+INFO 2025-09-05 16:28:12,807 ats_views 10332 2528 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 27
+INFO 2025-09-05 16:28:13,853 ats_views 10332 2528 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 35
+INFO 2025-09-05 16:28:15,206 ats_views 10332 2528 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 22
+INFO 2025-09-05 16:28:15,207 ats_views 10332 2528 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-05 16:28:15,208 basehttp 10332 2528 "POST /process-resumes/ HTTP/1.1" 200 8882
+INFO 2025-09-10 14:02:18,424 autoreload 18596 16068 Watching for file changes with StatReloader
+INFO 2025-09-10 14:02:42,295 nltk_utils 18596 16068 NLTK data 'punkt' already available
+INFO 2025-09-10 14:02:42,296 nltk_utils 18596 16068 NLTK data 'stopwords' already available
+INFO 2025-09-10 14:02:42,300 nltk_utils 18596 16068 Downloading NLTK data: wordnet
+INFO 2025-09-10 14:02:42,674 nltk_utils 18596 16068 Successfully downloaded NLTK data: wordnet
+WARNING 2025-09-10 14:10:02,553 log 18596 16176 Not Found: /
+WARNING 2025-09-10 14:10:02,556 basehttp 18596 16176 "GET / HTTP/1.1" 404 3754
+WARNING 2025-09-10 14:10:02,917 log 18596 16176 Not Found: /favicon.ico
+WARNING 2025-09-10 14:10:02,919 basehttp 18596 16176 "GET /favicon.ico HTTP/1.1" 404 3805
+INFO 2025-09-10 14:10:11,398 basehttp 18596 16176 "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-09-10 14:10:11,564 basehttp 18596 16176 "GET /admin/ HTTP/1.1" 200 7997
+INFO 2025-09-10 14:29:45,631 autoreload 12816 25604 Watching for file changes with StatReloader
+INFO 2025-09-10 14:29:56,074 nltk_utils 12816 25604 NLTK data 'punkt' already available
+INFO 2025-09-10 14:29:56,076 nltk_utils 12816 25604 NLTK data 'stopwords' already available
+INFO 2025-09-10 14:29:56,078 nltk_utils 12816 25604 Downloading NLTK data: wordnet
+INFO 2025-09-10 14:29:56,343 nltk_utils 12816 25604 Successfully downloaded NLTK data: wordnet
+INFO 2025-09-10 14:30:05,342 basehttp 12816 7012 "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2025-09-10 14:30:05,619 basehttp 12816 7012 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-10 14:30:05,804 basehttp 12816 7012 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+INFO 2025-09-10 14:30:06,031 basehttp 12816 7012 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-09-10 14:30:18,549 basehttp 12816 7012 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-09-10 14:30:18,588 basehttp 12816 7012 "GET /admin/ HTTP/1.1" 200 7997
+INFO 2025-09-10 14:30:20,732 basehttp 12816 7012 "GET /admin/api/user/ HTTP/1.1" 200 9428
+INFO 2025-09-10 14:30:20,806 basehttp 12816 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 14:30:23,642 basehttp 12816 7012 "GET /admin/api/user/2/change/ HTTP/1.1" 200 21021
+INFO 2025-09-10 14:30:23,706 basehttp 12816 13976 "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2025-09-10 14:30:23,710 basehttp 12816 21984 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2025-09-10 14:30:23,713 basehttp 12816 7012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 14:30:23,876 basehttp 12816 7012 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2025-09-10 14:30:23,879 basehttp 12816 21984 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2025-09-10 14:30:26,442 basehttp 12816 21984 "GET /admin/auth/ HTTP/1.1" 200 5582
+INFO 2025-09-10 14:30:28,678 basehttp 12816 21984 "GET /admin/auth/group/ HTTP/1.1" 200 8201
+INFO 2025-09-10 14:30:28,733 basehttp 12816 21984 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 14:30:28,761 basehttp 12816 21984 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-09-10 14:30:31,428 basehttp 12816 21984 "GET /admin/api/user/ HTTP/1.1" 200 9428
+INFO 2025-09-10 14:30:31,498 basehttp 12816 21984 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 14:30:34,641 basehttp 12816 21984 "GET /admin/api/user/2/change/ HTTP/1.1" 200 21021
+INFO 2025-09-10 14:30:34,703 basehttp 12816 21984 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 14:31:16,832 basehttp 12816 27304 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2025-09-10 14:31:16,834 views 12816 27304 Login attempt for email: hello@gmail.com
+WARNING 2025-09-10 14:31:17,535 views 12816 27304 Failed login attempt for email: hello@gmail.com
+ERROR 2025-09-10 14:31:17,575 exception_handlers 12816 27304 API Exception: AuthenticationFailed - Invalid email or password in CustomLoginView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 33, in post
+    raise AuthenticationFailed("Invalid email or password")
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+WARNING 2025-09-10 14:31:17,578 log 12816 27304 Unauthorized: /login/
+WARNING 2025-09-10 14:31:17,580 basehttp 12816 27304 "POST /login/ HTTP/1.1" 401 65
+INFO 2025-09-10 14:31:54,703 views 12816 27304 Login attempt for email: hell@gmail.com
+WARNING 2025-09-10 14:31:54,709 views 12816 27304 Failed login attempt for email: hell@gmail.com
+ERROR 2025-09-10 14:31:54,710 exception_handlers 12816 27304 API Exception: AuthenticationFailed - Invalid email or password in CustomLoginView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 33, in post
+    raise AuthenticationFailed("Invalid email or password")
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+WARNING 2025-09-10 14:31:54,713 log 12816 27304 Unauthorized: /login/
+WARNING 2025-09-10 14:31:54,714 basehttp 12816 27304 "POST /login/ HTTP/1.1" 401 65
+INFO 2025-09-10 14:32:00,358 views 12816 27304 Login attempt for email: hello@gmail.com
+INFO 2025-09-10 14:32:00,935 views 12816 27304 Successful login for user: hello@gmail.com
+INFO 2025-09-10 14:32:00,983 basehttp 12816 27304 "POST /login/ HTTP/1.1" 200 483
+INFO 2025-09-10 14:32:01,490 basehttp 12816 27304 "OPTIONS /profile/ HTTP/1.1" 200 0
+INFO 2025-09-10 14:32:01,505 basehttp 12816 27304 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:32:01,572 basehttp 12816 27304 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:32:01,589 basehttp 12816 27304 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:32:01,607 basehttp 12816 27304 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:38:41,850 basehttp 12816 21936 "OPTIONS /process-resumes/ HTTP/1.1" 200 0
+INFO 2025-09-10 14:38:41,860 ats_views 12816 21936 Resume processing request from user: hello@gmail.com
+INFO 2025-09-10 14:38:45,571 ats_views 12816 21936 Initializing ATS instance...
+INFO 2025-09-10 14:38:47,008 SentenceTransformer 12816 21936 Load pretrained SentenceTransformer: all-mpnet-base-v2
+INFO 2025-09-10 14:39:01,886 ats_views 12816 21936 ATS instance initialized successfully
+INFO 2025-09-10 14:39:06,596 ats_views 12816 21936 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 25
+INFO 2025-09-10 14:39:07,671 ats_views 12816 21936 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 41
+INFO 2025-09-10 14:39:09,401 ats_views 12816 21936 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 31
+INFO 2025-09-10 14:39:11,028 ats_views 12816 21936 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 36
+INFO 2025-09-10 14:39:12,713 ats_views 12816 21936 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 25
+INFO 2025-09-10 14:39:14,396 ats_views 12816 21936 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 39
+INFO 2025-09-10 14:39:15,644 ats_views 12816 21936 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 46
+INFO 2025-09-10 14:39:17,299 ats_views 12816 21936 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 51
+INFO 2025-09-10 14:39:18,738 ats_views 12816 21936 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 31
+INFO 2025-09-10 14:39:20,339 ats_views 12816 21936 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 61
+INFO 2025-09-10 14:39:21,322 ats_views 12816 21936 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 19
+INFO 2025-09-10 14:39:22,294 ats_views 12816 21936 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 36
+INFO 2025-09-10 14:39:23,387 ats_views 12816 21936 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 46
+INFO 2025-09-10 14:39:24,960 ats_views 12816 21936 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 31
+INFO 2025-09-10 14:39:24,961 ats_views 12816 21936 Successfully processed 14 resumes for user: hello@gmail.com
+INFO 2025-09-10 14:39:24,964 basehttp 12816 21936 "POST /process-resumes/ HTTP/1.1" 200 8891
+INFO 2025-09-10 14:40:51,939 basehttp 12816 21936 "OPTIONS /change-password/ HTTP/1.1" 200 0
+INFO 2025-09-10 14:40:51,946 views 12816 21936 Password change attempt for user: hello@gmail.com
+WARNING 2025-09-10 14:40:51,990 views 12816 21936 Password change validation failed for user: hello@gmail.com
+ERROR 2025-09-10 14:40:51,991 exception_handlers 12816 21936 API Exception: ValidationError - {'new_password': [ErrorDetail(string='Password must contain at least one uppercase letter.', code='password_no_upper')]} in ChangePasswordView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 75, in post
+    raise ValidationError(serializer.errors)
+rest_framework.exceptions.ValidationError: {'new_password': [ErrorDetail(string='Password must contain at least one uppercase letter.', code='password_no_upper')]}
+WARNING 2025-09-10 14:40:51,997 log 12816 21936 Bad Request: /change-password/
+WARNING 2025-09-10 14:40:51,998 basehttp 12816 21936 "POST /change-password/ HTTP/1.1" 400 128
+INFO 2025-09-10 14:44:38,868 views 12816 21936 Password change attempt for user: hello@gmail.com
+WARNING 2025-09-10 14:44:40,683 views 12816 21936 Incorrect old password for user: hello@gmail.com
+WARNING 2025-09-10 14:44:40,686 log 12816 21936 Bad Request: /change-password/
+WARNING 2025-09-10 14:44:40,689 basehttp 12816 21936 "POST /change-password/ HTTP/1.1" 400 42
+INFO 2025-09-10 14:45:03,727 views 12816 21936 Password change attempt for user: hello@gmail.com
+WARNING 2025-09-10 14:45:03,730 views 12816 21936 Password change validation failed for user: hello@gmail.com
+ERROR 2025-09-10 14:45:03,731 exception_handlers 12816 21936 API Exception: ValidationError - {'confirm_password': [ErrorDetail(string='Passwords do not match', code='invalid')]} in ChangePasswordView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 75, in post
+    raise ValidationError(serializer.errors)
+rest_framework.exceptions.ValidationError: {'confirm_password': [ErrorDetail(string='Passwords do not match', code='invalid')]}
+WARNING 2025-09-10 14:45:03,736 log 12816 21936 Bad Request: /change-password/
+WARNING 2025-09-10 14:45:03,738 basehttp 12816 21936 "POST /change-password/ HTTP/1.1" 400 102
+INFO 2025-09-10 14:45:16,225 views 12816 21936 Password change attempt for user: hello@gmail.com
+INFO 2025-09-10 14:45:19,801 views 12816 21936 Password successfully changed for user: hello@gmail.com
+INFO 2025-09-10 14:45:19,806 basehttp 12816 21936 "POST /change-password/ HTTP/1.1" 200 42
+INFO 2025-09-10 14:45:27,795 views 12816 21936 Login attempt for email: hello@gmail.com
+WARNING 2025-09-10 14:45:29,643 views 12816 21936 Failed login attempt for email: hello@gmail.com
+ERROR 2025-09-10 14:45:29,645 exception_handlers 12816 21936 API Exception: AuthenticationFailed - Invalid email or password in CustomLoginView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 33, in post
+    raise AuthenticationFailed("Invalid email or password")
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+WARNING 2025-09-10 14:45:29,650 log 12816 21936 Unauthorized: /login/
+WARNING 2025-09-10 14:45:29,653 basehttp 12816 21936 "POST /login/ HTTP/1.1" 401 65
+INFO 2025-09-10 14:45:42,220 views 12816 21936 Login attempt for email: hello@gmail.com
+WARNING 2025-09-10 14:45:44,018 views 12816 21936 Failed login attempt for email: hello@gmail.com
+ERROR 2025-09-10 14:45:44,019 exception_handlers 12816 21936 API Exception: AuthenticationFailed - Invalid email or password in CustomLoginView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 33, in post
+    raise AuthenticationFailed("Invalid email or password")
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+WARNING 2025-09-10 14:45:44,024 log 12816 21936 Unauthorized: /login/
+WARNING 2025-09-10 14:45:44,028 basehttp 12816 21936 "POST /login/ HTTP/1.1" 401 65
+INFO 2025-09-10 14:45:49,456 views 12816 21936 Login attempt for email: hello@gmail.com
+INFO 2025-09-10 14:45:51,012 views 12816 21936 Successful login for user: hello@gmail.com
+INFO 2025-09-10 14:45:51,017 basehttp 12816 21936 "POST /login/ HTTP/1.1" 200 483
+INFO 2025-09-10 14:45:51,387 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:45:51,403 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:45:51,424 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:45:51,455 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:46:47,063 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:46:47,097 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:46:47,116 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:46:47,133 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:47:08,006 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:47:08,029 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:47:08,047 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:47:08,069 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:50:21,289 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:50:21,318 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:50:21,348 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:50:21,368 basehttp 12816 21936 "GET /profile/ HTTP/1.1" 200 83
+INFO 2025-09-10 14:50:52,032 ats_views 12816 21936 Resume processing request from user: hello@gmail.com
+INFO 2025-09-10 14:50:55,043 ats_views 12816 21936 Processed resume: Naukri_SIVAKUMARB[18y_0m].pdf - Score: 16
+INFO 2025-09-10 14:50:56,881 ats_views 12816 21936 Processed resume: Naukri_SnehaMadkaikar[13y_0m].pdf - Score: 26
+INFO 2025-09-10 14:50:59,938 ats_views 12816 21936 Processed resume: Naukri_SubhashChandraVishwakarma[7y_0m].pdf - Score: 19
+INFO 2025-09-10 14:51:02,835 ats_views 12816 21936 Processed resume: Naukri_SUDHANSHUSHANKAR[10y_0m].pdf - Score: 20
+INFO 2025-09-10 14:51:05,797 ats_views 12816 21936 Processed resume: Naukri_SumitNamdevPatil.[10y_0m].pdf - Score: 18
+INFO 2025-09-10 14:51:08,731 ats_views 12816 21936 Processed resume: Naukri_SumitShekhar[5y_3m].pdf - Score: 24
+INFO 2025-09-10 14:51:10,898 ats_views 12816 21936 Processed resume: Naukri_VIJETHB[13y_0m].pdf - Score: 33
+INFO 2025-09-10 14:51:13,592 ats_views 12816 21936 Processed resume: Naukri_VinilKumarValmiki[11y_0m] (1).pdf - Score: 35
+INFO 2025-09-10 14:51:16,209 ats_views 12816 21936 Processed resume: Naukri_VitthalWasudeoBawane[9y_0m].pdf - Score: 17
+INFO 2025-09-10 14:51:19,132 ats_views 12816 21936 Processed resume: Resume- Bhaskar-10-01-2025.cleaned.pdf - Score: 44
+INFO 2025-09-10 14:51:21,058 ats_views 12816 21936 Processed resume: Shyam Sabale_Updated Resume.pdf - Score: 21
+INFO 2025-09-10 14:51:22,822 ats_views 12816 21936 Processed resume: Naukri_NeilBagchi[8y_0m].cleaned.pdf - Score: 24
+INFO 2025-09-10 14:51:24,933 ats_views 12816 21936 Processed resume: Naukri_NikhilRawat[9y_0m].pdf - Score: 32
+INFO 2025-09-10 14:51:27,827 ats_views 12816 21936 Processed resume: Naukri_NikhilYalagonda[5y_2m].cleaned.pdf - Score: 18
+INFO 2025-09-10 14:51:31,199 ats_views 12816 21936 Processed resume: Naukri_NIRAVARVINDBHAIRADADIA[11y_0m].cleaned.pdf - Score: 21
+INFO 2025-09-10 14:51:33,537 ats_views 12816 21936 Processed resume: Naukri_ParagRajendraKamble[9y_9m].cleaned.pdf - Score: 38
+INFO 2025-09-10 14:51:38,356 ats_views 12816 21936 Processed resume: Naukri_poluanil[9y_0m].docx - Score: 3
+INFO 2025-09-10 14:51:41,159 ats_views 12816 21936 Processed resume: Naukri_RahulNayyar[10y_0m].cleaned.pdf - Score: 33
+INFO 2025-09-10 14:51:43,077 ats_views 12816 21936 Processed resume: Naukri_RewatiBulusu[8y_0m].cleaned.pdf - Score: 25
+INFO 2025-09-10 14:51:45,952 ats_views 12816 21936 Processed resume: Naukri_RushaliShere[10y_0m].pdf - Score: 20
+INFO 2025-09-10 14:51:48,286 ats_views 12816 21936 Processed resume: Naukri_RushikeshBadgujar[5y_4m].cleaned.pdf - Score: 29
+INFO 2025-09-10 14:51:51,321 ats_views 12816 21936 Processed resume: Naukri_SahilHanda[9y_0m].cleaned.pdf - Score: 55
+INFO 2025-09-10 14:51:53,580 ats_views 12816 21936 Processed resume: Naukri_SanketWandile[6y_0m].pdf - Score: 22
+INFO 2025-09-10 14:51:56,757 ats_views 12816 21936 Processed resume: Naukri_SauravMitra[9y_7m].cleaned.pdf - Score: 18
+INFO 2025-09-10 14:51:59,846 ats_views 12816 21936 Processed resume: Naukri_SayanPurkayastha[7y_0m].pdf - Score: 50
+INFO 2025-09-10 14:52:02,201 ats_views 12816 21936 Processed resume: Naukri_ShivikaSingh[6y_0m].pdf - Score: 26
+INFO 2025-09-10 14:52:04,488 ats_views 12816 21936 Processed resume: Naukri_ShubhamDeore[7y_0m].docx - Score: 25
+INFO 2025-09-10 14:52:07,660 ats_views 12816 21936 Processed resume: Naukri_DeveshKaushik[7y_1m].pdf - Score: 21
+INFO 2025-09-10 14:52:10,620 ats_views 12816 21936 Processed resume: Naukri_GAURAVKHOSLA[19y_0m].cleaned.pdf - Score: 48
+INFO 2025-09-10 14:52:13,502 ats_views 12816 21936 Processed resume: Naukri_GauravSharma[13y_0m].pdf - Score: 35
+INFO 2025-09-10 14:52:16,510 ats_views 12816 21936 Processed resume: Naukri_HARDIKMEHTA[7y_6m].cleaned.pdf - Score: 25
+INFO 2025-09-10 14:52:19,503 ats_views 12816 21936 Processed resume: Naukri_HarshadKulkarni[9y_0m].pdf - Score: 31
+INFO 2025-09-10 14:52:21,277 ats_views 12816 21936 Processed resume: Naukri_HARSHITJAIN[11y_0m].cleaned (1).pdf - Score: 26
+INFO 2025-09-10 14:52:23,227 ats_views 12816 21936 Processed resume: Naukri_HarshSrivastav[9y_0m].cleaned.pdf - Score: 38
+INFO 2025-09-10 14:52:25,267 ats_views 12816 21936 Processed resume: Naukri_Inderjeet[16y_0m].docx - Score: 13
+INFO 2025-09-10 14:52:28,224 ats_views 12816 21936 Processed resume: Naukri_JohnRajan[12y_0m].pdf - Score: 36
+INFO 2025-09-10 14:52:30,080 ats_views 12816 21936 Processed resume: Naukri_JYOTIKUMARSINGH[14y_0m].docx - Score: 3
+INFO 2025-09-10 14:52:33,322 ats_views 12816 21936 Processed resume: Naukri_KalpeshTamboli[9y_6m].pdf - Score: 26
+INFO 2025-09-10 14:52:35,362 ats_views 12816 21936 Processed resume: Naukri_Kanika[5y_0m].cleaned.pdf - Score: 26
+INFO 2025-09-10 14:52:36,521 ats_views 12816 21936 Processed resume: Naukri_KapilKapoor[20y_0m].docx - Score: 32
+INFO 2025-09-10 14:52:38,305 ats_views 12816 21936 Processed resume: Naukri_KushalBDesale[12y_0m].docx - Score: 40
+INFO 2025-09-10 14:52:40,044 ats_views 12816 21936 Processed resume: Naukri_MOHDAAMIRULLAHINAMDAR[15y_0m].cleaned.pdf - Score: 19
+INFO 2025-09-10 14:52:41,278 ats_views 12816 21936 Processed resume: Naukri_NavaneethakrishnanV[14y_0m].pdf - Score: 38
+INFO 2025-09-10 14:52:42,315 ats_views 12816 21936 Processed resume: Jai_Rattanshi.pdf - Score: 14
+INFO 2025-09-10 14:52:44,001 ats_views 12816 21936 Processed resume: Lakshya_Agarwal_CV-1.cleaned.pdf - Score: 25
+INFO 2025-09-10 14:52:45,597 ats_views 12816 21936 Processed resume: Mousumi-Madhusmita-goodcv.com-141024.61838.pdf - Score: 30
+INFO 2025-09-10 14:52:46,723 ats_views 12816 21936 Processed resume: Naukri_ABHINAVKUMARSINGH[4y_6m].cleaned (1).pdf - Score: 19
+INFO 2025-09-10 14:52:48,136 ats_views 12816 21936 Processed resume: Naukri_AKASHKAMBLE[5y_4m].pdf - Score: 49
+INFO 2025-09-10 14:52:49,251 ats_views 12816 21936 Processed resume: Naukri_AkhileshBirla[14y_0m].cleaned.pdf - Score: 42
+INFO 2025-09-10 14:52:50,497 ats_views 12816 21936 Processed resume: Naukri_AmanGupta[8y_0m].cleaned.pdf - Score: 43
+INFO 2025-09-10 14:52:51,586 ats_views 12816 21936 Processed resume: Naukri_AMANVERMA[13y_0m].pdf - Score: 43
+INFO 2025-09-10 14:52:52,709 ats_views 12816 21936 Processed resume: Naukri_amitkumarojha[11y_0m].cleaned.pdf - Score: 22
+INFO 2025-09-10 14:52:54,113 ats_views 12816 21936 Processed resume: Naukri_AmitSharma[15y_0m].cleaned.pdf - Score: 41
+INFO 2025-09-10 14:52:55,124 ats_views 12816 21936 Processed resume: Naukri_AmrutaAnantaPatil[9y_0m].cleaned (1).pdf - Score: 32
+INFO 2025-09-10 14:52:56,566 ats_views 12816 21936 Processed resume: Naukri_AneesReshmi[12y_0m].pdf - Score: 34
+INFO 2025-09-10 14:52:58,616 ats_views 12816 21936 Processed resume: Naukri_AnupamChaudhary[5y_6m].pdf - Score: 31
+INFO 2025-09-10 14:53:00,483 ats_views 12816 21936 Processed resume: Naukri_ANUPAMKANDWAL[21y_0m].cleaned.pdf - Score: 35
+INFO 2025-09-10 14:53:01,678 ats_views 12816 21936 Processed resume: Naukri_Arjunkumarpaul[6y_0m].docx - Score: 17
+INFO 2025-09-10 14:53:01,679 ats_views 12816 21936 Successfully processed 58 resumes for user: hello@gmail.com
+INFO 2025-09-10 14:53:01,681 basehttp 12816 21936 "POST /process-resumes/ HTTP/1.1" 200 35602
+INFO 2025-09-10 14:53:02,479 basehttp 12816 21936 "OPTIONS /filter-keywords/ HTTP/1.1" 200 0
+INFO 2025-09-10 14:53:02,487 ats_views 12816 21936 Keyword filtering completed for user: hello@gmail.com
+INFO 2025-09-10 14:53:02,489 basehttp 12816 21936 "POST /filter-keywords/ HTTP/1.1" 200 14448
+INFO 2025-09-10 15:07:10,012 basehttp 12816 26096 "GET /admin/api/user/add/ HTTP/1.1" 200 20630
+INFO 2025-09-10 15:07:10,123 basehttp 12816 26096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:07:24,052 basehttp 12816 26096 "GET /admin/api/user/ HTTP/1.1" 200 9428
+INFO 2025-09-10 15:07:24,161 basehttp 12816 26096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:07:31,003 basehttp 12816 26096 "GET /admin/api/user/add/ HTTP/1.1" 200 20630
+INFO 2025-09-10 15:07:31,087 basehttp 12816 26096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:07:34,012 basehttp 12816 26096 "GET /admin/api/user/ HTTP/1.1" 200 9428
+INFO 2025-09-10 15:07:34,104 basehttp 12816 26096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:10:15,304 basehttp 12816 26096 "GET /admin/api/user/2/change/ HTTP/1.1" 200 21021
+INFO 2025-09-10 15:10:15,398 basehttp 12816 26096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:11:33,703 basehttp 12816 26096 "GET /admin/api/user/add/ HTTP/1.1" 200 20630
+INFO 2025-09-10 15:11:33,824 basehttp 12816 26096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:16:51,560 autoreload 12816 25604 C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\admin.py changed, reloading.
+INFO 2025-09-10 15:16:56,068 autoreload 18788 26516 Watching for file changes with StatReloader
+INFO 2025-09-10 15:17:12,508 nltk_utils 18788 26516 NLTK data 'punkt' already available
+INFO 2025-09-10 15:17:12,510 nltk_utils 18788 26516 NLTK data 'stopwords' already available
+INFO 2025-09-10 15:17:12,518 nltk_utils 18788 26516 Downloading NLTK data: wordnet
+INFO 2025-09-10 15:17:12,814 nltk_utils 18788 26516 Successfully downloaded NLTK data: wordnet
+WARNING 2025-09-10 15:17:21,692 log 18788 904 Not Found: /
+WARNING 2025-09-10 15:17:21,695 basehttp 18788 904 "GET / HTTP/1.1" 404 3754
+INFO 2025-09-10 15:17:26,608 basehttp 18788 904 "GET /admin/api/user/add/ HTTP/1.1" 200 12480
+INFO 2025-09-10 15:17:26,718 basehttp 18788 904 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:17:27,463 basehttp 18788 21012 "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2025-09-10 15:17:27,467 basehttp 18788 904 "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1480
+INFO 2025-09-10 15:17:38,404 basehttp 18788 904 "GET /admin/api/user/ HTTP/1.1" 200 14055
+INFO 2025-09-10 15:17:38,503 basehttp 18788 21012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:17:38,509 basehttp 18788 904 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-09-10 15:17:38,528 basehttp 18788 27928 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-09-10 15:17:38,573 basehttp 18788 904 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-09-10 15:17:38,576 basehttp 18788 27928 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-09-10 15:17:46,126 basehttp 18788 27928 "GET /admin/api/user/2/change/ HTTP/1.1" 200 21777
+INFO 2025-09-10 15:17:46,220 basehttp 18788 27928 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:17:46,221 basehttp 18788 904 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-09-10 15:17:46,224 basehttp 18788 21012 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15709
+INFO 2025-09-10 15:17:46,373 basehttp 18788 21012 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-09-10 15:17:48,403 basehttp 18788 21012 "GET /admin/api/user/ HTTP/1.1" 200 14055
+INFO 2025-09-10 15:17:48,500 basehttp 18788 21012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:17:52,433 basehttp 18788 21012 "GET /admin/api/user/2/change/ HTTP/1.1" 200 21777
+INFO 2025-09-10 15:17:52,511 basehttp 18788 21012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:18:00,080 basehttp 18788 21012 "GET /admin/api/user/2/password/ HTTP/1.1" 200 9470
+WARNING 2025-09-10 15:18:04,388 log 18788 21012 Not Found: /favicon.ico
+WARNING 2025-09-10 15:18:04,391 basehttp 18788 21012 "GET /favicon.ico HTTP/1.1" 404 3805
+INFO 2025-09-10 15:18:42,708 basehttp 18788 21012 "POST /admin/api/user/2/password/ HTTP/1.1" 302 0
+INFO 2025-09-10 15:18:42,821 basehttp 18788 21012 "GET /admin/api/user/2/change/ HTTP/1.1" 200 21913
+INFO 2025-09-10 15:18:42,910 basehttp 18788 21012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-10 15:19:06,068 views 18788 4900 Password change attempt for user: hello@gmail.com
+WARNING 2025-09-10 15:19:06,070 views 18788 4900 Password change validation failed for user: hello@gmail.com
+ERROR 2025-09-10 15:19:06,097 exception_handlers 18788 4900 API Exception: ValidationError - {'new_password': [ErrorDetail(string='This password is too short. It must contain at least 12 characters.', code='password_too_short'), ErrorDetail(string='This password is too common.', code='password_too_common'), ErrorDetail(string='Password must contain at least one uppercase letter.', code='password_no_upper')]} in ChangePasswordView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 75, in post
+    raise ValidationError(serializer.errors)
+rest_framework.exceptions.ValidationError: {'new_password': [ErrorDetail(string='This password is too short. It must contain at least 12 characters.', code='password_too_short'), ErrorDetail(string='This password is too common.', code='password_too_common'), ErrorDetail(string='Password must contain at least one uppercase letter.', code='password_no_upper')]}
+WARNING 2025-09-10 15:19:06,105 log 18788 4900 Bad Request: /change-password/
+WARNING 2025-09-10 15:19:06,109 basehttp 18788 4900 "POST /change-password/ HTTP/1.1" 400 229
+INFO 2025-09-10 15:19:42,481 views 18788 4900 Password change attempt for user: hello@gmail.com
+WARNING 2025-09-10 15:19:42,482 views 18788 4900 Password change validation failed for user: hello@gmail.com
+ERROR 2025-09-10 15:19:42,484 exception_handlers 18788 4900 API Exception: ValidationError - {'new_password': [ErrorDetail(string='Password must contain at least one uppercase letter.', code='password_no_upper')]} in ChangePasswordView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 75, in post
+    raise ValidationError(serializer.errors)
+rest_framework.exceptions.ValidationError: {'new_password': [ErrorDetail(string='Password must contain at least one uppercase letter.', code='password_no_upper')]}
+WARNING 2025-09-10 15:19:42,488 log 18788 4900 Bad Request: /change-password/
+WARNING 2025-09-10 15:19:42,490 basehttp 18788 4900 "POST /change-password/ HTTP/1.1" 400 128
+INFO 2025-09-10 15:20:12,520 views 18788 4900 Password change attempt for user: hello@gmail.com
+WARNING 2025-09-10 15:20:12,522 views 18788 4900 Password change validation failed for user: hello@gmail.com
+ERROR 2025-09-10 15:20:12,523 exception_handlers 18788 4900 API Exception: ValidationError - {'new_password': [ErrorDetail(string='Password must contain at least one digit.', code='password_no_digit')]} in ChangePasswordView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 75, in post
+    raise ValidationError(serializer.errors)
+rest_framework.exceptions.ValidationError: {'new_password': [ErrorDetail(string='Password must contain at least one digit.', code='password_no_digit')]}
+WARNING 2025-09-10 15:20:12,527 log 18788 4900 Bad Request: /change-password/
+WARNING 2025-09-10 15:20:12,530 basehttp 18788 4900 "POST /change-password/ HTTP/1.1" 400 117
+INFO 2025-09-10 15:20:20,483 views 18788 4900 Password change attempt for user: hello@gmail.com
+WARNING 2025-09-10 15:20:20,486 views 18788 4900 Password change validation failed for user: hello@gmail.com
+ERROR 2025-09-10 15:20:20,487 exception_handlers 18788 4900 API Exception: ValidationError - {'new_password': [ErrorDetail(string='Password must contain at least one special character.', code='password_no_special')]} in ChangePasswordView.POST
+Traceback (most recent call last):
+  File "C:\Users\SurbhiChayya\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\SurbhiChayya\Downloads\project-bolt-stackblitz-starters-pwj5gras\project\server\api\views.py", line 75, in post
+    raise ValidationError(serializer.errors)
+rest_framework.exceptions.ValidationError: {'new_password': [ErrorDetail(string='Password must contain at least one special character.', code='password_no_special')]}
+WARNING 2025-09-10 15:20:20,492 log 18788 4900 Bad Request: /change-password/
+WARNING 2025-09-10 15:20:20,495 basehttp 18788 4900 "POST /change-password/ HTTP/1.1" 400 129
+INFO 2025-09-10 15:20:44,622 views 18788 4900 Password change attempt for user: hello@gmail.com
+INFO 2025-09-10 15:20:48,127 views 18788 4900 Password successfully changed for user: hello@gmail.com
+INFO 2025-09-10 15:20:48,130 basehttp 18788 4900 "POST /change-password/ HTTP/1.1" 200 42
+INFO 2025-09-10 15:20:53,863 basehttp 18788 21012 "POST /admin/logout/ HTTP/1.1" 200 3568
+INFO 2025-09-10 15:21:00,809 basehttp 18788 21012 "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2025-09-10 15:21:00,826 basehttp 18788 21012 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-10 15:21:00,893 basehttp 18788 21012 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
