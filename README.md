@@ -41,8 +41,7 @@ A full-stack web application that uses AI/ML algorithms to analyze and score res
 ## 📋 Prerequisites
 
 - **Python 3.8+**
-- **Node.js 16+**
-- **npm or yarn**
+- **yarn**
 
 ## 🔧 Installation & Setup
 
