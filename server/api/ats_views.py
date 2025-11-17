@@ -135,7 +135,7 @@ class ResumeProcessingView(APIView):
     def _extract_text_from_pdf(self, file):
         """Extract text from PDF file"""
         try:
-            import fitz  # PyMuPDF
+            import pymupdf  # PyMuPDF
             
             # Create temporary file
             with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as temp_file:
@@ -145,7 +145,7 @@ class ResumeProcessingView(APIView):
             
             try:
                 # Extract text using PyMuPDF
-                doc = fitz.open(temp_file_path)
+                doc = pymupdf.open(temp_file_path)
                 text = ""
                 for page in doc:
                     text += page.get_text()
